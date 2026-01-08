@@ -13,7 +13,7 @@ body {
 .hero {
     background: linear-gradient(rgba(0,0,0,.6), rgba(0,0,0,.6)),
                 url("../images/hero.png") center/cover no-repeat;
-    height: 90vh;
+    height: 75vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -45,7 +45,6 @@ body {
     width: 100%;
     height: auto;
 }
-
 
 .btn {
     display: inline-block;

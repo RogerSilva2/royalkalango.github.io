@@ -23,12 +23,29 @@ body {
 .hero-content {
     color: #fff;
     max-width: 700px;
+    position: relative;
 }
 
 .hero h1 {
     font-size: 2.5rem;
     margin-bottom: 15px;
 }
+
+.hero-logo {
+    position: absolute;
+    top: 20px;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 10;
+    width: 300px;
+}
+
+.hero-logo img {
+    width: 100%;
+    height: auto;
+}
+
 
 .btn {
     display: inline-block;
@@ -194,6 +211,13 @@ footer {
 }
 
 /* Para telas grandes (PC) */
+@media (min-width: 1400px) {
+    .card-hotel {
+        flex: 0 1 600px; /* Largura fixa em telas muito grandes */
+        max-width: 600px;
+    }
+}
+
 @media (min-width: 1024px) {
     .card-group {
         flex-wrap: nowrap; /* Mantém os cards lado a lado */
@@ -229,12 +253,24 @@ footer {
         width: 100%; /* Ocupa 100% da largura */
         max-width: 100%;
     }
-}
+    
+    .hero-logo {
+        width: 200px;
+        top: 15px;
+        bottom: 15px;
+    }
 
-/* Opcional: ajuste para telas muito grandes */
-@media (min-width: 1400px) {
-    .card-hotel {
-        flex: 0 1 600px; /* Largura fixa em telas muito grandes */
-        max-width: 600px;
+    .hero h1 {
+    font-size: 1.5rem;
+    margin-bottom: 5px;
+    }
+
+    .hero p {
+    font-size: 0.9rem;
+    margin-bottom: 15px;
+    }
+
+    .card-text {
+        font-size: 0.98rem;
     }
 }

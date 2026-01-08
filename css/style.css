@@ -13,7 +13,7 @@ body {
 .hero {
     background: linear-gradient(rgba(0,0,0,.6), rgba(0,0,0,.6)),
                 url("../images/hero.png") center/cover no-repeat;
-    height: 75vh;
+    height: 60vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -24,6 +24,7 @@ body {
     color: #fff;
     max-width: 700px;
     position: relative;
+    margin-top: 150px;
 }
 
 .hero h1 {

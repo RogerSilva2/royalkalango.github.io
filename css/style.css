@@ -1,281 +1,278 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 body {
-    color: #333;
-    line-height: 1.6;
+  color: #333;
+  line-height: 1.6;
 }
 
 .hero {
-    background: linear-gradient(rgba(0,0,0,.6), rgba(0,0,0,.6)),
-                url("../images/hero.png") center/cover no-repeat;
-    height: 60vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
+  background: linear-gradient(rgba(0,0,0,.6), rgba(0,0,0,.6)),
+              url("../images/hero.png") center/cover no-repeat;
+  min-height: 60vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 40px 20px;
+  gap: 30px;
 }
 
 .hero-content {
-    color: #fff;
-    max-width: 700px;
-    position: relative;
-    margin-top: 150px;
+  color: #fff;
+  max-width: 700px;
 }
 
 .hero h1 {
-    font-size: 2.5rem;
-    margin-bottom: 15px;
+  font-size: 2.5rem;
+  margin-bottom: 15px;
 }
 
 .hero-logo {
-    position: absolute;
-    top: 20px;
-    bottom: 20px;
-    left: 50%;
-    transform: translateX(-50%);
-    z-index: 10;
-    width: 300px;
+  position: relative;
+  width: 220px;
+  max-width: 70%;
 }
 
 .hero-logo img {
-    width: 100%;
-    height: auto;
+  width: 100%;
+  height: auto;
+  display: block;
 }
 
 .btn {
-    display: inline-block;
-    margin-top: 20px;
-    padding: 12px 30px;
-    background: #c9a24d;
-    color: #fff;
-    text-decoration: none;
-    border-radius: 4px;
-    font-weight: bold;
+  display: inline-block;
+  margin-top: 20px;
+  padding: 12px 30px;
+  background: #c9a24d;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 4px;
+  font-weight: bold;
 }
 
 section {
-    padding: 60px 20px;
-    max-width: 1100px;
-    margin: auto;
-
+  padding: 60px 20px;
+  max-width: 1100px;
+  margin: auto;
 }
 
 section h2 {
-    text-align: center;
-    margin-bottom: 40px;
+  text-align: center;
+  margin-bottom: 40px;
 }
 
 .grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
 }
 
 .card {
-    background: #f5f5f5;
-    padding: 30px;
-    border-radius: 6px;
-    text-align: center;
+  background: #f5f5f5;
+  padding: 30px;
+  border-radius: 6px;
+  text-align: center;
 }
 
 .card span {
-    display: block;
-    margin-top: 15px;
-    font-weight: bold;
+  display: block;
+  margin-top: 15px;
+  font-weight: bold;
 }
 
 .destaque {
-    background: #c9a24d;
-    color: #fff;
+  background: #c9a24d;
+  color: #fff;
 }
 
 .cta {
-    background: #222;
-    color: #fff;
-    text-align: center;
-    border-radius: 20px 20px 0px 0px;
+  background: #222;
+  color: #fff;
+  text-align: center;
+  border-radius: 20px 20px 0px 0px;
 }
 
 a {
- color: #c9a24d;
+  color: #c9a24d;
 }
 
 footer {
-    background: #111;
-    color: #aaa;
-    text-align: center;
-    padding: 20px;
+  background: #111;
+  color: #aaa;
+  text-align: center;
+  padding: 20px;
 }
 
 .carousel {
-    height: 100%;
-    overflow: hidden;
-    display: flex;
+  height: 100%;
+  overflow: hidden;
+  display: flex;
 }
 
 .carousel-inner {
-    display: flex;
-    width: 500%;
-    height: 100%;
-    animation: slideCarousel 20s infinite ease-in-out;
+  display: flex;
+  width: 500%;
+  height: 100%;
+  animation: slideCarousel 20s infinite ease-in-out;
 }
 
 .carousel-item {
-    flex: 0 0 100%;
-    height: 100%;
-    filter: brightness(65%)
+  flex: 0 0 100%;
+  height: 100%;
+  filter: brightness(65%)
 }
 
 .carousel-item img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 @keyframes slideCarousel {
-    0%, 15% {
-        transform: translateX(0%);
-    }
-    20%, 35% {
-        transform: translateX(-100%);
-    }
-    40%, 55% {
-        transform: translateX(-200%);
-    }
-    60%, 75% {
-        transform: translateX(-300%);
-    }
-    80%, 100% {
-        transform: translateX(-400%);
-    }
+  0%, 15% {
+    transform: translateX(0%);
+  }
+  20%, 35% {
+    transform: translateX(-100%);
+  }
+  40%, 55% {
+    transform: translateX(-200%);
+  }
+  60%, 75% {
+    transform: translateX(-300%);
+  }
+  80%, 100% {
+    transform: translateX(-400%);
+  }
 }
 
 .card-hotel {
-    background: #ffffff;
-    border-radius: 14px;
-    padding: 30px;
-    overflow: hidden;
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
-    box-sizing: border-box;
-    width: 100%;
-    max-width: 800px;
-    transition: transform 0.3s ease;
+  background: #ffffff;
+  border-radius: 14px;
+  padding: 30px;
+  overflow: hidden;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 800px;
+  transition: transform 0.3s ease;
 }
 
 .card-hotel:hover {
-    transform: translateY(-5px);
+  transform: translateY(-5px);
 }
 
 .card-body {
-    padding: 1rem 1.2rem 0rem 0rem;
+  padding: 1rem 1.2rem 0rem 0rem;
 }
 
 .card-text {
-    font-size: 1.15rem;
-    line-height: 1.45;
-    color: #4b5563;
-    margin-top: 12px;
-    text-align: left;
+  font-size: 1.15rem;
+  line-height: 1.45;
+  color: #4b5563;
+  margin-top: 12px;
+  text-align: left;
 }
 
 .card-title {
-    line-height: 1.45;
-    margin-top: 0.15rem;
-    text-align: left;
-    display: flex;
-    align-items: center;
-    gap: 50px;
+  line-height: 1.45;
+  margin-top: 0.15rem;
+  text-align: left;
+  display: flex;
+  align-items: center;
+  gap: 50px;
 }
 
 .card-logo {
-    display: flex;
-    width: 35px;
-    height: 35px;
+  display: flex;
+  width: 35px;
+  height: 35px;
 }
 
 .card-group {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 5rem;
-    flex-wrap: wrap;
-    padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5rem;
+  flex-wrap: wrap;
+  padding: 10px;
 }
 
 .hotel-section {
-    max-width: 1100px;
+  max-width: 1100px;
 }
 
 .fi {
-    color: #c9a24d;
-    font-size: 32px;
+  color: #c9a24d;
+  font-size: 32px;
 }
-/* Para telas grandes (PC) */
+
+blockquote {
+  margin: 20px 0;
+  padding-left: 1.5rem;
+  border-left: 5px solid #c9a24d;
+}
+
 @media (min-width: 1400px) {
-    .card-hotel {
-        flex: 0 1 600px; /* Largura fixa em telas muito grandes */
-        max-width: 600px;
-    }
+  .card-hotel {
+    flex: 0 1 600px;
+    max-width: 600px;
+  }
 }
 
 @media (min-width: 1024px) {
-    .card-group {
-        flex-wrap: nowrap; /* Mantém os cards lado a lado */
-    }
-    
-    .card-hotel {
-        flex: 0 0 50%; /* Cada card ocupa cerca de 50% */
-        max-width: 800px; /* Limita a largura máxima*/
-    }
+  .card-group {
+    flex-wrap: nowrap;
+  }
+
+  .card-hotel {
+    flex: 0 0 50%;
+    max-width: 800px;
+  }
 }
 
-/* Para tablets */
 @media (max-width: 1023px) and (min-width: 768px) {
-    .card-group {
-        gap: 3rem; /* Reduz o espaçamento */
-    }
-    
-    .card-hotel {
-        flex:  1 calc(50% - 3rem); /* Dois cards por linha com gap */
-        max-width: calc(50% - 3rem);
-    }
+  .card-group {
+    gap: 3rem;
+  }
+
+  .card-hotel {
+    flex:  1 calc(50% - 3rem);
+    max-width: calc(50% - 3rem);
+  }
 }
 
-/* Para celulares */
 @media (max-width: 767px) {
-    .card-group {
-        flex-direction: column; /* Empilha os cards verticalmente */
-        gap: 2rem; /* Reduz o espaçamento vertical */
-    }
-    
-    .card-hotel {
-        flex: 0 0 auto; /* Remove flexibilidade */
-        width: 100%; /* Ocupa 100% da largura */
-        max-width: 100%;
-    }
-    
-    .hero-logo {
-        width: 200px;
-        top: 15px;
-        bottom: 15px;
-    }
+  .card-group {
+    flex-direction: column;
+    gap: 2rem;
+  }
 
-    .hero h1 {
-    font-size: 1.5rem;
-    margin-bottom: 5px;
-    }
+  .card-hotel {
+    flex: 0 0 auto;
+    width: 100%;
+    max-width: 100%;
+  }
 
-    .hero p {
+  .hero-logo {
+    width: 160px;
+  }
+
+  .hero h1 {
+    font-size: 1.4rem;
+  }
+
+  .hero p {
     font-size: 0.9rem;
-    margin-bottom: 15px;
-    }
+  }
 
-    .card-text {
-        font-size: 0.98rem;
-    }
+  .card-text {
+    font-size: 0.98rem;
+  }
 }

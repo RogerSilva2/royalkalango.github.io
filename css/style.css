@@ -213,7 +213,7 @@ footer {
   font-size: 32px;
 }
 
-blockquote {
+.blockquote {
   margin: 20px 0;
   padding-left: 1.5rem;
   border-left: 5px solid #c9a24d;

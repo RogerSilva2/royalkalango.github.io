@@ -209,6 +209,10 @@ footer {
     margin: auto;
 }
 
+.fi {
+    color: #c9a24d;
+    font-size: 32px;
+}
 /* Para telas grandes (PC) */
 @media (min-width: 1400px) {
     .card-hotel {

@@ -220,20 +220,20 @@ footer {
   border-left: 5px solid #c9a24d;
 }
 
-.amenidades {
+.caracteristicas {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 15px;
   margin-top: 20px;
 }
 
-.amenidades i {
+.caracteristicas i {
   display: inline-flex;
   align-items: center;
   gap: 8px;
 }
 
-.amenidades i::after {
+.caracteristicas i::after {
   content: attr(title);
   font-weight: bold;
   font-size: medium;
